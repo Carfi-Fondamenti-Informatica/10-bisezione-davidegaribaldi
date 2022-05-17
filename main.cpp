@@ -37,7 +37,7 @@ while(true) {
     }
     else
     {
-    if(funz(a,b))
+    if(funz(a,x))
     {
      a=x;
     }
