@@ -47,8 +47,8 @@ while(true) {
     }
     if(abs((b-a)/2)<pow(10,-6))
     {
-        cout << abs((b-a)/2) << endl;
-        cout << pow(abs((b-a)/2), 2) * cos(abs((b-a)/2)) + 1;
+        cout << x << endl;
+        cout << pow(x,2) * cos(x) + 1;
         return 0;
     }
     }
