@@ -4,7 +4,7 @@ using namespace std;
 
 bool controllo(float a)
 {
-    float fa;
+    double fa;
     fa=pow(a,2)*cos(a)+1;
     if(fa==0) {
         return true;
@@ -13,7 +13,7 @@ bool controllo(float a)
 }
 bool funz(float a,float b)
 {
-float fa,fb;
+double fa,fb;
 fa=pow(a,2)*cos(a)+1;
 fb=pow(b,2)*cos(b)+1;
 if((fa*fb)>=0)
@@ -45,7 +45,7 @@ while(true) {
     {
     b=x;
     }
-    if(abs((b-a)/2)<pow(10,-6))
+    if(abs((b-a)/2)<1*pow(M_E,-6))
     {
         cout << x << endl;
         cout << pow(x,2) * cos(x) + 1;
@@ -53,5 +53,5 @@ while(true) {
     }
     }
 }
-    return 0;
+
 }
