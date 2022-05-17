@@ -16,7 +16,7 @@ bool funz(float a,float b)
 double fa,fb;
 fa=pow(a,2)*cos(a)+1;
 fb=pow(b,2)*cos(b)+1;
-if((fa*fb)>=0)
+if((fa*fb)<0)
     {
     return true;
     }
@@ -27,7 +27,7 @@ int main() {
     do {
         cout << "inserire estremi" << endl;
         cin >> a >> b;
-    }while(funz(a,b));
+    }while(!funz(a,b));
 while(true) {
     x = (a + b) / 2;
     if (controllo(x)) {
@@ -39,11 +39,11 @@ while(true) {
     {
     if(funz(a,x))
     {
-     a=x;
+     b=x;
     }
-    else
+    else if(funz(x,b))
     {
-    b=x;
+    a=x;
     }
     if(abs((b-a)/2)<1*pow(M_E,-6))
     {
