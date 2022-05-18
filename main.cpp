@@ -23,7 +23,8 @@ if((fa*fb)<0)
 return false;
 }
 int main() {
-   float a,b,x;
+   int c;
+    float a,b,x;
     do {
         cout << "inserire estremi" << endl;
         cin >> a >> b;
@@ -31,7 +32,10 @@ int main() {
 while(true) {
     x = (a + b) / 2;
     if (controllo(x)) {
-        cout << x << endl;
+        x=x*10000;
+        c=x;
+        x=c;
+        cout << x/10000 << endl;
         return 0;
     }
     else
@@ -44,9 +48,12 @@ while(true) {
     {
     a=x;
     }
-    if(abs((b-a)/2)<1*pow(M_E,-8))
+    if(abs((b-a)/2)<1*pow(10,-6))
     {
-        cout << x << endl;
+        x=x*10000;
+        c=x;
+        x=c;
+        cout << x/10000 << endl;
         return 0;
     }
     }
